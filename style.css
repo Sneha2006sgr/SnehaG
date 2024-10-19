@@ -8,7 +8,9 @@
   --nav-text: #ecf0f1;
 }
 
-
+a{
+  text-decoration: none;
+}
 
 body {
   font-family: 'Poppins', sans-serif;
