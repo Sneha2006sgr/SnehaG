@@ -868,12 +868,13 @@ body.dark-mode #achievements {
 
 body.dark-mode .achievement-card {
   background: var(--background-color);
-  border: 1px solid var(--primary-color);
+ 
   box-shadow: 0 10px 20px rgba(255,255,255,0.05);
 }
 
 body.dark-mode .achievement-card:hover {
   box-shadow: 0 15px 30px rgba(255,255,255,0.1);
+  border: 1px solid var(--primary-color);
 }
 
 body.dark-mode .achievement-card h3 {
@@ -938,6 +939,7 @@ body.dark-mode .achievement-card small {
 
 body.dark-mode div.timeline-content:hover {
   box-shadow: 0 15px 30px rgba(255,255,255,0.1);
+  border: 1px solid var(--primary-color);
 }
 
 body.dark-mode div.skill-container:hover {
@@ -946,6 +948,7 @@ body.dark-mode div.skill-container:hover {
 
 body.dark-mode div.project-card:hover {
   box-shadow: 0 15px 30px rgba(255,255,255,0.1);
+  border: 1px solid var(--primary-color);
 }
 
 body.dark-mode div.text2:hover {
@@ -975,3 +978,8 @@ body.dark-mode img.img-fluid-rounded-circle-mb-4:hover {
 body.dark-mode a.btn.btn-secondary:hover {
   box-shadow: 0 15px 30px rgba(255,255,255,0.1);
 }
+
+body.dark-mode .form-group:hover{
+  border: 1px solid var(--primary-color);
+} 
+
