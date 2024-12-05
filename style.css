@@ -45,7 +45,7 @@ body.dark-mode {
 }
 
 #side-nav:hover {
-  width: 180px;
+  width: 190px;
   background-color:#310247;
 }
 
@@ -597,7 +597,7 @@ input:checked + .slider:before {
 }
 
 /* Adjust other section styles */
-#about, #skills, #education, #projects, #contact {
+#about, #skills, #education, #projects, #contact, #achievements, #experience{
   padding-top: 80px; /* Add some top padding to account for the fixed navigation */
 }
 
@@ -983,3 +983,226 @@ body.dark-mode .form-group:hover{
   border: 1px solid var(--primary-color);
 } 
 
+
+/* CSS */
+/* Light Theme (Default) */
+.experience-section {
+  padding: 20px 0;
+  
+}
+/*
+.container {
+  max-width: 1500px;
+  margin: 0 auto;
+  
+  padding: 0 20px;
+}
+/*
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #2d3436;
+  margin-bottom: 70px;
+  font-weight: 700;
+}
+*/
+.experience-grid {
+  /*display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px 0;
+  */
+  display:inline-flex;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.experience-card {
+ /* perspective: 900px;
+  height: 400px;
+  */
+  background-color: var(--background-color);
+  border-radius: 10px;
+  overflow: block;
+  display:table-column-group;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+/*
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.8s;
+}
+
+.card-front{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 15px;
+  overflow: hidden;
+}
+*/
+.card-front {
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  filter: grayscale(100%);
+  transition: filter 0.5s ease;
+}
+
+.experience-card:hover .card-front {
+  filter: grayscale(0%);
+}
+
+.company-logo {
+  width: 500px;
+  height: 400px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.company-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: filter 0.5s ease;
+}
+
+.basic-info {
+  text-align: left;
+}
+
+.basic-info h3 {
+  font-size: 1.4rem;
+  margin: 0 0 10px 0;
+  color: var(--primary-color);
+}
+
+.company {
+  font-size: 1.1rem;
+  color: #636e72;
+  margin-bottom: 10px;
+}
+
+.date-badge {
+  display: inline-block;
+  background: #e9ecef;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  color: #2d3436;
+}
+
+.card-front:hover {
+  background: linear-gradient(135deg, #6c5ce7, #a8e6cf);
+  padding: 25px;
+  color: #ffffff;
+}
+
+.card-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 0 0;
+}
+/*
+.card-content li {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+.card-content li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+}
+*/
+/* Dark Theme */
+.dark-mode .experience-section {
+  background-color: #242323;
+}
+
+.dark-mode .section-title {
+  color: var(--primary-color);
+}
+
+.dark-mode .card-front {
+  background: #2d2d2d;
+  border-radius: 10px;
+  border: 1px solid #404040;
+}
+
+.dark-mode .basic-info h3 {
+  color: var(--primary-color);
+}
+
+.dark-mode .company {
+  color: #b3b3b3;
+}
+
+.dark-mode .date-badge {
+  background: #404040;
+  color: #ffffff;
+}
+
+.dark-mode .card-front:hover {
+  background: linear-gradient(135deg, #6760c7, #3d8b72);
+}
+
+.dark-mode .company-logo img {
+  filter: brightness(0.9);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .experience-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .experience-card {
+    height: 350px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .company-logo {
+    width: 100px;
+    height: 100px;
+  }
+
+  .basic-info h3 {
+    font-size: 1.2rem;
+  }
+
+  .company {
+    font-size: 1rem;
+  }
+}
+
+/* Optional: Add animation keyframes for smoother transitions */
+@keyframes colorize {
+  from {
+    filter: grayscale(100%);
+  }
+  to {
+    filter: grayscale(0%);
+  }
+}
