@@ -1013,7 +1013,7 @@ body.dark-mode .form-group:hover{
   padding: 20px 0;
   */
   display:inline-flex;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-flex: repeat(auto-fit, minmax(300px, 1fr));
   gap: 30px;
 }
 
