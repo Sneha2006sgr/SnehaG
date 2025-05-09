@@ -4,430 +4,775 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sneha Gond</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav id="side-nav">
-        <div class="nav-logo">SGR</div>
-        <div class="social-links">
-            <a href="https://www.linkedin.com/in/sneha-gond-069583230" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/Sneha2006sgr" target="_blank"><i class="fab fa-github"></i></a>
-        </div>
-        <div class="theme-switch-wrapper">
-            <label class="theme-switch" for="checkbox">
-                <input type="checkbox" id="checkbox" />
-                <div class="slider round"></div>
-            </label>
-            <em>Switch Theme</em>
-        </div>
-        <ul>
-            <li><a href="#home" class="nav-link active"><i class="fas fa-home"></i> <span>Home</span></a></li>
-            <li><a href="#about" class="nav-link"><i class="fas fa-user"></i> <span>About</span></a></li>
-            <li><a href="#projects" class="nav-link"><i class="fas fa-lightbulb"></i> <span>Projects</span></a></li>
-            <li><a href="#experience" class="nav-link"><i class="fas fa-briefcase"></i> <span>Experience</span></a></li>
-            <li><a href="#skills" class="nav-link"><i class="fas fa-cogs"></i> <span>Skills</span></a></li>
-            <li><a href="#education" class="nav-link"><i class="fas fa-graduation-cap"></i> <span>Education</span></a></li>
-            <li><a href="#achievements" class="nav-link"><i class="fas fa-trophy"></i> <span>Achievements</span></a></li>
-            <li><a href="#contact" class="nav-link"><i class="fas fa-envelope"></i> <span>Contact</span></a></li>
-        </ul>
-       
-    </nav>
+    <div class="theme-toggle">
+        <button id="theme-button">
+            <i class="fas fa-moon"></i>
+        </button>
+    </div>
+
+    <!-- <div class="cursor"></div>
+    <div class="cursor-follower"></div> -->
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <main>
-            <section id="home" class="section">
-                <div class="container home-content">
-                    <div class="image-content">
-                        <img src="static/images/Sneha.png" alt="Sneha Gond" class="profile-image" height="700px">
-                    </div>
+        <!-- Home Section -->
+        <section id="home" class="active-section">
+            <div class="container">
+                <div class="home-content">
                     <div class="text-content">
                         <h1 class="glitch" data-text="Sneha Gond">Sneha Gond</h1>
-                    
-                        <p class="subtitle">Web Developer </p>
-                        <a href="#about" class="btn btn-primary">Know More About Me</a>
+                        <div class="typewriter">
+                            <h2>I'm a <span class="typed-text"></span><span class="cursor">&nbsp;</span></h2>
+                        </div>
+                        <a href="#about" class="cta-button">Know More About Me</a>
                     </div>
-                   
+                    <div class="image-content">
+                        <div class="profile-image">
+                            <img src="static/images/SNEHA2.png" alt="Sneha Gond">
+                        </div>
+                    </div>
                 </div>
-            </section>
-       
-        <section id="about" class="section">
+                <div class="scroll-indicator">
+                    <div class="mouse"></div>
+                    <p>Scroll Down</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about">
             <div class="container">
-                <div class="text-content2">
-                    
-                    <div class="text2">
-                            <h2>About Me</h2>
-                            <p>Hello! I'm Sneha Gond, a passionate web developer currently working as an intern at Edunet Foundation as AI Intern in collaboration with Microsoft.</p><p> I'm pursuing my Final Year Bachelor's degree in Computer Application from KES Shroff's College, affiliated with Mumbai University.</p>
-                            
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-image">
+                        <img src="static/images/sneha.png" alt="Sneha Gond">
+                        <div class="floating-shapes">
+                            <div class="shape"></div>
+                            <div class="shape"></div>
+                            <div class="shape"></div>
+                        </div>
+                    </div>
+                    <div class="about-text">
+                        <p>I am Web Developer having strong roots in HTML, CSS and Javascript for the Front-end; while for the Backend I usually uses PHP through Apache server. As I can develop websites using Coding I have my potential to work with Wordpress and developing E-commerce website and as well as I'm capable of using Elementor and WooCommerce in the Wordpress. I am currently pursuing my Final year Bachelors Degree in Field of Computer Applications from Mumbai University. And along with it I'm exploring my roots further in the field of Data and AI. </p>
+                        <p>I had recently organize a workshop at Rozario High School as a part of my College Community Engagement project. In the workshop me along with my team teaches the student there about SDLC, Web Development and Coding Explore more about it through my this <a href="https://www.linkedin.com/posts/sneha-gond_codecraftworkshop-gratitude-communityengagement-activity-7308183570865352708-Mzxy?utm_source=share&utm_medium=member_desktop&rcm=ACoAADm_2JEBF8_yAMc3OO9tNEsmHiScOKNAFaw" target="_blank">LinkedIn post</a>.The major outcome came after the CODECRAFT was that many students came to us asking to continue the sessions we ensure them to continue the session during vacations and we started their online sessions from 17th, April, 2025. I am glad to share my knowledge with them and making them feel enjoyed through all over the session.</p>
+                        <p>Beyond my technical pursuits, I have a passion for creative writing, particularly Hindi poetries and shayaris. This artistic outlet helps me enhance my cognitive abilities and express my thoughts in an unique ways. Writing poems has gone beyond my hobbies whenever I feel bored or frustrated I just start reading poetries written by me and then just after a moment I even start creating a new poem as well. I do love writing and reading poems specially written in my mother tongue Hindi.</p>
+                        
+                        <div class="achievements">
                             <h3>Academic Achievements:</h3>
                             <ul>
-                                <li>Secured 9.18 SGPA in 1st Semester</li>
-                                <li>Achieved 8.18 SGPA in 2nd Semester</li>
+                                <li><i class="fas fa-award"></i> Secured 8.27 SGPA in 1st Semester</li>
+                                <li><i class="fas fa-award"></i> Achieved 8.18 SGPA in 2nd Semester</li>
+                                <li><i class="fas fa-award"></i> Achieved 8.64 SGPA in 3rd Semester</li>
+                                <li><i class="fas fa-award"></i> Achieved 8.80 SGPA in 4th Semester</li>
                             </ul>
+                        </div>
+                        
+                        <div class="certifications">
                             <h3>Certifications:</h3>
-                            <ul>
-                                <li>Web Development Certificate</li>
-                                <li>Arduino Programming Certificate</li>
-                                <li>Python for Data Science</li>
-                                <li>Maharashtra State Certificate in Information Technology</li>
-                            </ul>
-                            <h3>My add-ons which I'm currently gaining</h3>
-                            <ul>
-                                
-                                <li>Generative AI, Chat-GPT and Prompt Engineering</li>
-                            </ul>
+                            <div class="cert-grid">
+                                <div class="cert-item">
+                                    <i class="fas fa-certificate"></i>
+                                    <span>Web Development</span>
+                                </div>
+                                <div class="cert-item">
+                                    <i class="fas fa-certificate"></i>
+                                    <span>Arduino Programming</span>
+                                </div>
+                                <div class="cert-item">
+                                    <i class="fas fa-certificate"></i>
+                                    <span>Python for Data Science</span>
+                                </div>
+                                <div class="cert-item">
+                                    <i class="fas fa-certificate"></i>
+                                    <span>Maharashtra State Certificate in IT</span>
+                                </div>
+                                <div class="cert-item">
+                                    <i class="fas fa-certificate"></i>
+                                    <span>Chat-GPT Generative AI & Prompt Engineering</span>
+                                </div>
+                            </div>
                         </div>
-                        <div class="image2">
-                            <img src="static/images/sneha.png.png" class="img-fluid-rounded-circle-mb-4" >
-                        </div>
+                        
+                        <!--<div class="currently-learning">
+                            <h3>Currently gaining knowledge in:</h3>
+                            <div class="learning-tag">Generative AI</div>
+                            <div class="learning-tag">Chat-GPT</div>
+                            <div class="learning-tag">Prompt Engineering</div>
+                        </div>-->
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="projects" class="section">
+        <!-- Projects Section -->
+        <section id="projects">
             <div class="container">
-                <h2>Projects</h2>
-                <div class="project-grid">
+                <h2 class="section-title">Projects</h2>
+                <div class="projects-grid">
                     <div class="project-card">
-                        <h3>NEET-AIIMS</h3><Br>
-                        <img src="static/images/neet-aiims-1.jpg" class="d-block w-100" alt="NEET-AIIMS Project Screenshot 1">
-                        <p>This website was prepared for students preparing for the popular competitive exam NEET in India. It features:</p>
-                        <ul>
-                        <li>Handmade diagrams and important images from previous exams</li>
-                        <li>Multiple Choice Questions for practice</li>
-                        <li>Previous year question papers for download</li>
-                        <li>YouTube lectures organized by subject</li>
-                        <li>PDF lecture notes and questions</li>
-                        <li>Feedback system with email integration</li>
-                        </ul>
-                        <p>Technologies used: HTML, CSS, JavaScript</p>
-                        <a href="https://sneha2006sgr.github.io/NEET_AIIMS/" class="btn btn-secondary">View Project</a>
-                        <a href="https://github.com/Sneha2006sgr/NEET_AIIMS.git" class="btn btn-secondary">View Source Code</a>
+                        <div class="project-content">
+                            <div class="project-text">
+                            <h3>NEET-AIIMS</h3>
+                            <div class="project-details">
+                                <ul>
+                                    <li>Handmade diagrams and important images from previous exams</li>
+                                    <li>Multiple Choice Questions for practice</li>
+                                    <li>Previous year question papers for download</li>
+                                    <li>YouTube lectures organized by subject</li>
+                                    <li>PDF lecture notes and questions</li>
+                                    <li>Feedback system with email integration</li>
+                                </ul>
+                                <div class="tech-stack">
+                                    <span>HTML</span>
+                                    <span>CSS</span>
+                                    <span>JavaScript</span>
+                                </div>
+                                    <div class="project-buttons">
+                                        <a href="https://github.com/Sneha2006sgr/NEET_AIIMS.git" class="project-btn source-code">
+                                            <i class="fab fa-github"></i>
+                                            Source Code
+                                        </a>
+                                        <a href="https://sneha2006sgr.github.io/NEET_AIIMS/" class="project-btn view-project">
+                                            <i class="fas fa-external-link-alt"></i>
+                                            View Project
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-image">
+                                <img src="static/images/project1.jpg" alt="NEET-AIIMS Project">
+                            </div>
+                        </div>
+                        <div class="project-number">01</div>
                     </div>
-                    <div class="project-card"><br>
-                        <h3>All Calc at One Place</h3>
-                        <img src="static/images/Scientific.png" alt="Project 2">
-                        <p><br>This project, "All Calc at one place", comprises both Standard and Scientific Calculator functionalities. Features include:</p>
-                        <ul>
-                        <li>Colorful GUI design using Tkinter</li>
-                        <li>Both standard and scientific calculator functions</li>
-                        <li>Utilizes Python's math library for calculations</li>
-                        <li>Custom-designed button layout and display grid</li>
-                        </ul>
-                        <p>Technologies used: Python, Tkinter</p><br>
-                        <a href="https://github.com/Sneha2006sgr/Scientific_Calculator.git" class="btn btn-secondary">View Source Code</a>
+
+                    <div class="project-card">
+                        <div class="project-content">
+                            <div class="project-text">
+                            <h3>All Calc at One Place</h3>
+                            <div class="project-details">
+                                <ul>
+                                    <li>Colorful GUI design using Tkinter</li>
+                                    <li>Both standard and scientific calculator functions</li>
+                                    <li>Utilizes Python's math library for calculations</li>
+                                    <li>Custom-designed button layout and display grid</li>
+                                </ul>
+                                <div class="tech-stack">
+                                    <span>Python</span>
+                                    <span>Tkinter</span>
+                                </div>
+                                    <div class="project-buttons">
+                                        <a href="https://github.com/Sneha2006sgr/Scientific_Calculator.git" class="project-btn source-code">
+                                            <i class="fab fa-github"></i>
+                                            Source Code
+                                        </a>
+                                        <!--<a href="#" class="project-btn view-project">
+                                            <i class="fas fa-external-link-alt"></i>
+                                            View Project
+                                        </a>-->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-image">
+                                <img src="static/images/project2.jpg" alt="Calculator Project">
+                            </div>
+                        </div>
+                        <div class="project-number">02</div>
                     </div>
-                    <div class="project-card"><br>
-                        <h3>Identifying Shopping Trends using Data Analytics</h3>
-                        <img src="static/images/stegano.png" alt="Project 3">
-                        <p><br>Developed an Image Steganography tool in Java that hides secret messages within images without compromising their quality.</p>
-                        <ul>
-                        <li>Implemented features like message encryption and decryption, allowing users to securely embed and retrieve hidden messages from images.</li>
-                        <li>Designed a user-friendly GUI using Java Swing, enabling easy image selection, message embedding, and retrieval.</li>
-                        <li>Utilized image processing techniques to modify image binary data while maintaining visual integrity, ensuring seamless data concealment.</li>
-                        <li>Enhanced the project with file saving and retrieval capabilities, making it a practical tool for secure communication and educational purposes.</li>
-                        </ul>
-                        <br>
-                        <a href="https://github.com/Sneha2006sgr/JAVA_Steganography.git" class="btn btn-secondary">View Source Code</a>
+
+                    <div class="project-card">
+                        <div class="project-content">
+                            <div class="project-text">
+                            <h3>Identifying Shopping Trends using Data Analytics</h3>
+                            <div class="project-details">
+                                <ul>
+                                    <li>Used Python Libraries: Numpy, Matplotlib, Scipy & ScikitLearn</li>
+                                    <li>Developed on Jupyter notebook</li>
+                                    <li>Graphs and charts were Used to explain the data more accurately</li>
+                                    <li>Analysis was done after cleaning the data.</li>
+                                </ul>
+                                <div class="tech-stack">
+                                    <span>Python</span><span>Jupyter Notebook</span>
+                                </div>
+                                    <div class="project-buttons">
+                                        <a href="https://github.com/Sneha2006sgr/Project-3-AICTE.git" class="project-btn source-code">
+                                            <i class="fab fa-github"></i>
+                                            Source Code
+                                        </a>
+                                        <!--<a href="#" class="project-btn view-project">
+                                            <i class="fas fa-external-link-alt"></i>
+                                            View Project
+                                        </a>-->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-image">
+                                <img src="static/images/project3.jpg" alt="Data Analytics Project">
+                            </div>
+                        </div>
+                        <div class="project-number">03</div>
                     </div>
-                    <div class="project-card"><br>
-                        <h3>Identigying Shopping Trends using Data Analytics</h3>
-                        <img src="static/images/P3.png" alt="Project 3">
-                        <p><br>This Python project analyzes retail customer behavior, optimizing inventory, marketing, and profitability through data insights. Features include:</p>
-                        <ul>
-                        <li>Customer Demographics Analysis – Identifies key groups by age, gender, and spending.</li>
-                        <li>Product Preference Insights – Finds top categories, sizes, and colors.</li>
-                        <li>Purchase Frequency & Trends – Analyzes shopping habits and seasonal effects.</li>
-                        <li>Data Visualization – Uses charts and graphs with Matplotlib & Seaborn.</li>
-                        </ul>
-                        <br>
-                        <a href="https://github.com/Sneha2006sgr/Project-3-AICTE.git" class="btn btn-secondary">View Source Code</a>
+
+                    <div class="project-card">
+                        <div class="project-content">
+                            <div class="project-text">
+                            <h3>Steganography</h3>
+                            <div class="project-details">
+                                <ul>
+                                    <li>Message encryption and decryption</li>
+                                    <li>User-friendly GUI using Java Swing</li>
+                                    <li>Image processing techniques for data concealment</li>
+                                    <li>File saving and retrieval capabilities</li>
+                                </ul>
+                                <div class="tech-stack">
+                                    <span>Java</span>
+                                </div>
+                                    <div class="project-buttons">
+                                        <a href="https://github.com/Sneha2006sgr/JAVA_Steganography.git" class="project-btn source-code">
+                                            <i class="fab fa-github"></i>
+                                            Source Code
+                                        </a>
+                                        <!--<a href="#" class="project-btn view-project">
+                                            <i class="fas fa-external-link-alt"></i>
+                                            View Project
+                                        </a>-->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-image">
+                                <img src="static/images/project4.jpg" alt="Shopping Trends Project">
+                            </div>
+                        </div>
+                        <div class="project-number">04</div>
                     </div>
                 </div>
-            </div> 
+            </div>
         </section>
 
-        <section id="experience" class="experience-section">
+        <!-- Experience Section -->
+        <section id="experience">
             <div class="container">
                 <h2 class="section-title">Experience</h2>
                 <div class="experience-grid">
-                    <div class="experience-card">
-                        <div class="card-inner">
-                            <div class="card-front">
-                                <div class="company-logo">
-                                    <img src="static/images/GAOTek_WebDev.png" alt="GAOTek Inc." class="grayscale-img">
+                    <!-- IBM Skillsbuild Experience -->
+                    <div class="experience-item">
+                        <div class="experience-content">
+                            <div class="company-image">
+                                <img src="./static/images/experience4.jpg" alt="IBM Skillsbuild">
+                            </div>
+                            <div class="experience-details">
+                                <h3>Cybersecurity Internship - IBM Skillsbuild, AICTE and Edunet</h3>
+                                <p class="experience-date">January 2025 - February 2025</p>
+                                <ul>
+                                    <li>Completed Cybersecurity project on "Data Hiding in Images using Steganography"</li>
+                                    <li>Created GUI for smooth workflow</li>
+                                    <li>Implemented both Encryption and Decryption functionality</li>
+                                </ul>
+                                <div class="tech-stack">
+                                    <span>Java</span>
+                                    <span>GUI</span>
+                                    <span>Steganography</span>
                                 </div>
-                                <div class="basic-info">
-                                    <h3>Web Developer Intern</h3>
-                                    <div class="company">GAOTek Inc.</div>
-                                    <span class="date-badge">June 2024 - November 2024</span>
-                                    <ul>
-                                        <li>Developed an e-commerce website on WordPress using HTML, CSS, JavaScript, and PHP while assisting interns and reviewing files as Assistant Squad Leader.</li>
-                                        <li>Promoted to Squad Leader, taking on additional responsibilities such as second file reviews and hosting meetings.</li>
-                                        <li>Managed four squads as Assistant Platoon Leader, including two focused on industry pages and two on uploading, while reporting to IMC and Platoon Leader.</li>
-                                        <li>Advanced to Platoon Leader, sharing staff meeting reports with HR and intern progress reports with IMC.</li>
-                                        <li>Took on additional tasks including managing squads in the absence of SL or manager, reviewing files, checking IMCs of SL, ASL, and interns, and guiding interns on social media tasks.</li>
-                                    </ul>
+                                <div class="project-buttons">
+                                    <a href="https://github.com/Sneha2006sgr/JAVA_Steganography.git" class="project-btn source-code" target="_blank">
+                                        <i class="fab fa-github"></i>
+                                        Source Code
+                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div>
-        
-                    <div class="experience-card">
-                        <div class="card-inner">
-                            <div class="card-front">
-                                <div class="company-logo">
-                                    <img src="static/images/Project_Manager_SIEMENS.png" alt="Project Manager" class="grayscale-img">
-                                </div>
-                                <div class="basic-info">
-                                    <h3>Project Manager Job Simulation</h3>
-                                    <div class="company">SIEMENS</div>
-                                    <span class="date-badge">Nov 2024 - Nov 2024</span>
-                                    <ul>
-                                        <li>Completed a comprehensive project management simulation for Siemens Mobility, focusing on KPI development and dashboard management.</li>
-                                        <li>Developed and applied strategic KPIs to monitor rail infrastructure projects, ensuring alignment with Siemens Mobility’s objectives.</li>
-                                        <li>Utilized Microsoft Excel and data visualization tools to create and update project dashboards, effectively communicating project progress to stakeholders.</li>
-                                        <li>Utilized Microsoft Excel and data visualization tools to create and update project dashboards, effectively communicating project progress to stakeholders.</li>
-                                        <li>Demonstrated strong problem-solving skills by navigating construction challenges and stakeholder feedback to maintain project momentum.</li>                                            
-                                        <li>Enhanced stakeholder confidence through effective communication and adaptive project management strategies in real-world scenarios.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="experience-card">
-                        <div class="card-inner">
-                            <div class="card-front">
-                                <div class="company-logo">
-                                    <img src="static/images/aicte.png" alt="Project Manager" class="grayscale-img">
-                                </div>
-                                <div class="basic-info">
-                                    <h3>AI Intern</h3>
-                                    <div class="company">TechSaksham (Microsoft, SAP, AICTE & Edunet)</div>
-                                    <span class="date-badge">Dec 2024 - January 2025</span>
-                                    <ul>
-                                        <li>Developed a project on Identifying Shopping Trends using Data Analytics, leveraging Python-based analytical techniques.</li>
-                                        <li>Utilized Python libraries such as NumPy, Pandas, and Matplotlib to analyze and visualize data, identifying key trends and insights.</li>
-                                        <li>Gained hands-on experience in data analytics and visualization, applying insights to real-world retail data.</li>
-                                        <li>Documented findings and submitted a comprehensive report on data analytics methodologies and insights.</li>
-                                        
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="experience-card">
-                        <div class="card-inner">
-                            <div class="card-front">
-                                <div class="company-logo">
-                                    <img src="static/images/ibm.png" alt="Project Manager" class="grayscale-img">
-                                </div>
-                                <div class="basic-info">
-                                    <h3>Cybersecurity Intern</h3>
-                                    <div class="company"> AICTE & IBM Skillsbuild & Edunet Foundation</div>
-                                    <span class="date-badge">January - February 2025</span>
-                                    <ul>
-                                        <li>Worked on an exciting Steganography project, focusing on embedding secret information within digital files like images.</li>
-                                        <li>Utilized advanced techniques to conceal data without altering the visual appearance of the files.</li>
-                                        <li>Gained hands-on experience in data security and confidentiality through practical implementation.</li>
-                                        <li>Explored the real-world applications of Steganography in safeguarding sensitive information.</li>
-                                        <li>Enhanced understanding of cryptographic methods and their role in secure communication.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                   
-                </div>
-            </div>
-        </section>        
 
-        <section id="skills" class="section">
-            <div class="container">
-                <h1>Skills & Softwares</h1>
-                <div class="skill-container">
-                    <div class="skill-item">
-                        <div class="skill-name">Data Structure Algorithms</div>
-                        
+                    <!-- Techsaksham Experience -->
+                    <div class="experience-item">
+                        <div class="experience-content">
+                            <div class="company-image">
+                                <img src="static/images/experience3.jpg" alt="Techsaksham">
+                            </div>
+                            <div class="experience-details">
+                                <h3>AI Internship - Techsaksham (Microsoft, SAP, AICTE, Edunet)</h3>
+                                <p class="experience-date">December 2024 - January 2025</p>
+                                <ul>
+                                    <li>Completed project on "Identifying Shopping Trends using Data Analytics"</li>
+                                    <li>Applied Python libraries: Matplotlib, Pandas, Scipy for data cleaning and analysis</li>
+                                    <li>Created Data Visualizations using Jupyter notebook for actionable insights</li>
+                                </ul>
+                                <div class="tech-stack">
+                                    <span>Python</span>
+                                    <span>Data Analysis</span>
+                                    <span>Machine Learning</span>
+                                </div>
+                                <div class="project-buttons">
+                                    <a href="https://github.com/Sneha2006sgr/Project-3-AICTE" class="project-btn source-code" target="_blank">
+                                        <i class="fab fa-github"></i>
+                                        Source Code
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="skill-item">
-                        <div class="skill-name">Java</div>
-                        
+
+                    <!-- Walmart Experience -->
+                    <div class="experience-item">
+                        <div class="experience-content">
+                            <div class="company-image">
+                                <img src="static/images/experience2.jpg" alt="Walmart">
+                            </div>
+                            <div class="experience-details">
+                                <h3>Advanced Software Engineering Virtual Experience - Walmart USA</h3>
+                                <p class="experience-date">December 2024</p>
+                                <ul>
+                                    <li>Completed Advanced Software Engineering Job Simulation solving technical projects for various Walmart teams</li>
+                                    <li>Developed a novel version of heap data structure in Java for shipping department</li>
+                                    <li>Designed UML class diagram for data processor with different operating modes</li>
+                                    <li>Created entity relationship diagram for Walmart's pet department database</li>
+                                </ul>
+                                <div class="tech-stack">
+                                    <span>Java</span>
+                                    <span>UML</span>
+                                    <span>Database Design</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="skill-item">
-                        <div class="skill-name">Python</div>
-                        
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-name">HTML5</div>
-                        
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-name">CSS3</div>
-                        
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-name">JavaScript</div>
-                        
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-name">C</div>
-                       
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-name">C++</div>
-                       
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-name">Microsoft-Office tools</div>
-                       
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-name">SQL</div>
-                       
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-name">Oracle</div>
-                        
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-name">Visual Studio</div>
-                        
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-name">Jupyter</div>
-                        
+
+                    <!-- GAOTek Experience -->
+                    <div class="experience-item">
+                        <div class="experience-content">
+                            <div class="company-image">
+                                <img src="static/images/experience1.jpg" alt="GAOTek Inc.">
+                            </div>
+                            <div class="experience-details">
+                                <h3>Web Development Intern - GAOTek Inc., USA</h3>
+                                <p class="experience-date">June 2024 - December 2024</p>
+                                <ul>
+                                    <li>Designed E-Commerce website using WordPress, PHP, SQL, HTML, CSS, and JavaScript</li>
+                                    <li>Progressed through multiple leadership roles:
+                                        <ul class="sub-list">
+                                            <li>Assistant Squad Leader: Reviewed and guided interns for product page uploads</li>
+                                            <li>Squad Leader: Managed 70 interns, organized meetings, finalized product pages</li>
+                                            <li>Assistant Platoon Leader: Managed 150 interns across 4 squads</li>
+                                            <li>Platoon Leader: Directed 150 interns, tracked progress, reported to HR</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <div class="tech-stack">
+                                    <span>WordPress</span>
+                                    <span>PHP</span>
+                                    <span>SQL</span>
+                                    <span>HTML/CSS</span>
+                                    <span>JavaScript</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="education" class="section">
+        <!-- Skills Section -->
+        <section id="skills">
             <div class="container">
-                <h2>Education</h2>
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <div class="timeline-content">
+                <h2 class="section-title">Skills</h2>
+                <div class="skills-container">
+                    <div class="skill-card">
+                        <div class="skill-card-header">
+                            <i class="fas fa-code"></i>
+                        <h3>Programming Languages</h3>
+                        </div>
+                        <div class="skill-card-content">
+                            <div class="skill-item" data-skill="Java">
+                                <div class="skill-icon"><i class="fab fa-java"></i></div>
+                                <span>Java</span>
+                            </div>
+                            <div class="skill-item" data-skill="Python">
+                                <div class="skill-icon"><i class="fab fa-python"></i></div>
+                                <span>Python</span>
+                            </div>
+                            <div class="skill-item" data-skill="C">
+                                <div class="skill-icon"><i class="fas fa-code"></i></div>
+                                <span>C</span>
+                            </div>
+                            <div class="skill-item" data-skill="C++">
+                                <div class="skill-icon"><i class="fas fa-code"></i></div>
+                                <span>C++</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-card-header">
+                            <i class="fas fa-globe"></i>
+                        <h3>Web Technologies</h3>
+                        </div>
+                        <div class="skill-card-content">
+                            <div class="skill-item" data-skill="HTML5">
+                                <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                                <span>HTML5</span>
+                            </div>
+                            <div class="skill-item" data-skill="CSS3">
+                                <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+                                <span>CSS3</span>
+                            </div>
+                            <div class="skill-item" data-skill="JavaScript">
+                                <div class="skill-icon"><i class="fab fa-js"></i></div>
+                                <span>JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-card-header">
+                            <i class="fas fa-database"></i>
+                        <h3>Databases</h3>
+                        </div>
+                        <div class="skill-card-content">
+                            <div class="skill-item" data-skill="SQL">
+                                <div class="skill-icon"><i class="fas fa-database"></i></div>
+                                <span>SQL</span>
+                            </div>
+                            <div class="skill-item" data-skill="Oracle">
+                                <div class="skill-icon"><i class="fas fa-database"></i></div>
+                                <span>Oracle</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-card-header">
+                            <i class="fas fa-tools"></i>
+                        <h3>Tools & Technologies</h3>
+                        </div>
+                        <div class="skill-card-content">
+                            <div class="skill-item" data-skill="Microsoft-Office">
+                                <div class="skill-icon"><i class="fas fa-file-word"></i></div>
+                                <span>MS Office</span>
+                            </div>
+                            <div class="skill-item" data-skill="Visual Studio">
+                                <div class="skill-icon"><i class="fas fa-code"></i></div>
+                                <span>Visual Studio</span>
+                            </div>
+                            <div class="skill-item" data-skill="Jupyter">
+                                <div class="skill-icon"><i class="fas fa-book-open"></i></div>
+                                <span>Jupyter</span>
+                            </div>
+                            <div class="skill-item" data-skill="DSA">
+                                <div class="skill-icon"><i class="fas fa-project-diagram"></i></div>
+                                <span>DSA</span>
+                            </div>
+                            <div class="skill-item" data-skill="Git">
+                                <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
+                                <span>Git</span>
+                            </div>
+                            <div class="skill-item" data-skill="VS Code">
+                                <div class="skill-icon"><i class="fas fa-code"></i></div>
+                                <span>VS Code</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education">
+            <div class="container">
+                <h2 class="section-title">Education</h2>
+                <div class="education-timeline">
+                    <div class="education-item">
+                        <div class="education-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="education-content">
+                            <span class="education-year">2022 - Present</span>
                             <h3>Bachelor of Computer Application</h3>
                             <p>KES Shroff's College, Mumbai University</p>
-                            <p>2022 - Present</p>
+                            <ul>
+                                <li>Secured 8.27 SGPA in 1st Semester</li>
+                                <li>Achieved 8.18 SGPA in 2nd Semester</li>
+                                <li>Achieved 8.64 SGPA in 3rd Semester</li>
+                                <li>Achieved 8.80 SGPA in 4th Semester</li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="timeline-item">
-                        <div class="timeline-content">
+                    <div class="education-item">
+                        <div class="education-icon">
+                            <i class="fas fa-school"></i>
+                        </div>
+                        <div class="education-content">
+                            <span class="education-year">2020 - 2022</span>
                             <h3>Higher Secondary Education</h3>
-                            <p>Mithibai College of Arts and Science</p>
-                            <p>2020 - 2022</p>
+                            <p>SVKM's Mithibai College</p>
+                            <ul>
+                                <li>Participated in multiple college competitions</li>
+                                <li>Won awards for Hindi poetry</li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="timeline-item">
-                        <div class="timeline-content">
+                    <div class="education-item">
+                        <div class="education-icon">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <div class="education-content">
+                            <span class="education-year">Completed 2020</span>
                             <h3>Secondary Education</h3>
                             <p>Raj High School</p>
-                            <p>Completed 2020</p>
+                            <ul>
+                                <li>Active participation in extracurricular activities</li>
+                                <li>Leadership roles in school events</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="achievements" class="section">
+        <!-- Achievements Section -->
+        <section id="achievements">
             <div class="container">
-                <h2>Achievements and Certifications</h2>
+                <h2 class="section-title">Achievements</h2>
                 <div class="achievements-grid">
                     <div class="achievement-card">
-                        <h3>Academic Achievements</h3>
-                        <ul>
-                            <li>Winner in Economy Track Event at AWIM Mumbai Suburban Olympics 
-                                <small>Project: Jet Toy and innovation of vehicals in Future</small>
-                            </li>
-                            <li>School Representative for District Level Science Exhibition 
-                                <small>Selected among 500+ students</small>
-                            </li>
-                        </ul>
+                        <div class="achievement-header">
+                            <i class="fas fa-trophy"></i>
+                            <h3>Academic Excellence</h3>
+                        </div>
+                        <div class="achievement-content">
+                            <div class="achievement-item">
+                                <div class="achievement-icon">
+                                    <i class="fas fa-medal"></i>
+                                </div>
+                                <div class="achievement-details">
+                                    <h4>Class Representative</h4>
+                                    <p>2024-present</p>
+                                    <span class="achievement-tag">Leadership</span>
+                                    <p class="achievement-description">Successfully managed class activities and enhanced communication between students and faculty.</p>
+                                </div>
+                            </div>
+                            <div class="achievement-item">
+                                <div class="achievement-icon">
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <div class="achievement-details">
+                                    <h4>Top Performer</h4>
+                                    <p>2023-2025</p>
+                                    <span class="achievement-tag">Academic</span>
+                                    <p class="achievement-description">Consistently ranked among top performers in class with exceptional grades.</p>
+                                </div>
+                            </div>
+                            <div class="achievement-item">
+                                <div class="achievement-icon">
+                                    <i class="fas fa-award"></i>
+                                </div>
+                                <div class="achievement-details">
+                                    <h4>School Representative for District Level Science Exhibition</h4>
+                                    <p>2022</p>
+                                    <span class="achievement-tag">Academic</span>
+                                    <p class="achievement-description">Recognized for outstanding academic performance and consistent dedication to studies.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    
+
                     <div class="achievement-card">
-                        <h3>Professional Certifications</h3>
-                        <ul>
-                            <li>Python for Data Science - Swayam NPTEL 2024
-                                <small>Issued by Indian Institute of Technology of Madras</small>
-                            </li>
-                            <li>Web Development - KES Shroff's College 2023
-                                <small>Complete Frontend Development Track</small>
-                            </li>
-                            <li>Arduino Programming Certificate - KES Shroff's College 2023
-                                <small>Learned Arduino microcontroller programming</small>
-                            </li>
-                        </ul>
+                        <div class="achievement-header">
+                            <i class="fas fa-pen-fancy"></i>
+                            <h3>Creative Achievements</h3>
+                        </div>
+                        <div class="achievement-content">
+                            <div class="achievement-item">
+                                <div class="achievement-icon">
+                                    <i class="fas fa-microphone"></i>
+                                </div>
+                                <div class="achievement-details">
+                                    <h4>Hosted Matribhasha Diwas Program</h4>
+                                    <p>2025</p>
+                                    <span class="achievement-tag">Hosting</span>
+                                    <p class="achievement-description">Successfully hosted the Matribhasha Diwas program in college, promoting the importance of Mother Languages.</p>
+                                </div>
+                            </div>
+                            <div class="achievement-item">
+                                <div class="achievement-icon">
+                                    <i class="fas fa-pen"></i>
+                                </div>
+                                <div class="achievement-details">
+                                    <h4>Hindi Poetry Competition</h4>
+                                    <p>2024</p>
+                                    <span class="achievement-tag">Writing</span>
+                                    <p class="achievement-description">Won 1<sup>st</sup> Prize for Hindi poetry in college competitions.</p>
+                                </div>
+                            </div>
+                            <div class="achievement-item">
+                                <div class="achievement-icon">
+                                    <i class="fas fa-book"></i>
+                                </div>
+                                <div class="achievement-details">
+                                    <h4>Creative Writing</h4>
+                                    <p>2021</p>
+                                    <span class="achievement-tag">Writing</span>
+                                    <p class="achievement-description">Written a blog on the topic during school competition and secured first position</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-        
+
                     <div class="achievement-card">
-                        <h3>Extra-curricular Excellence</h3>
-                        <ul>
-                            <li>Currently Class Representative for whole SYBCA in 2024
-                                <small>Enhancing Communication and Collabration between Students and Faculties</small>
-                            </li>
-                            <li>Runner Up in Eassay Competition 2019
-                                <small>Among 100+ competitors</small>
-                            </li>
-                            <li>Volunteer in Joy of Giving at Institutional Social Responsibility Committee
-                                <small>100+ hours of community service</small>
-                            </li>
-                        </ul>
+                        <div class="achievement-header">
+                            <i class="fas fa-hands-helping"></i>
+                            <h3>Community Service</h3>
+                        </div>
+                        <div class="achievement-content">
+                            <div class="achievement-item">
+                                <div class="achievement-icon">
+                                    <i class="fas fa-users"></i>
+                                </div>
+                                <div class="achievement-details">
+                                    <h4>Student Mentor</h4>
+                                    <p>2025-present</p>
+                                    <span class="achievement-tag">Leadership</span>
+                                    <p class="achievement-description">Mentored junior students in academic and career development. Wo were part of my workshop</p>
+                                </div>
+                            </div>
+                            <div class="achievement-item">
+                                <div class="achievement-icon">
+                                    <i class="fas fa-handshake"></i>
+                                </div>
+                                <div class="achievement-details">
+                                    <h4>Memeber of DLLE</h4>
+                                    <p>2023-2025</p>
+                                    <span class="achievement-tag">Community </span>
+                                    <p class="achievement-description">Participated in multiple community leading activities like swachha bharat, planted trees, and many more.</p>
+                                </div>
+                            </div>
+                            <div class="achievement-item">
+                                <div class="achievement-icon">
+                                    <i class="fas fa-heart"></i>
+                                </div>
+                                <div class="achievement-details">
+                                    <h4>Joy of Giving Volunteer</h4>
+                                    <p>2023</p>
+                                    <span class="achievement-tag">Community</span>
+                                    <p class="achievement-description">Completed 100+ hours of community service through the Institutional Social Responsibility Committee.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="contact" class="section">
+        <!-- Contact Section -->
+        <section id="contact">
             <div class="container">
-                <h2>Connect To Me</h2>
-                <div class="row">
-                    <div class="col-md-6">
-                        <h2>Mail me at</h2>
-                            <p><a href="mailto:snehasgr1675@gmail.com"target="_blank" class="btn btn-primary">Sneha</a></p>
-                        <h2><img src="">Connect on LinkedIn</h2>
-                        <a href=" https://www.linkedin.com/in/sneha-gond-069583230" target="_blank" class="btn btn-primary">Visit my LinkedIn profile</a>
-                        
+                <h2 class="section-title">Contact</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div class="contact-text">
+                                <h3>Email</h3>
+                                <a href="mailto:snehasgr1675@gmail.com">snehasgr1675@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-linkedin"></i>
+                            <div class="contact-text">
+                                <h3>LinkedIn</h3>
+                                <a href="https://www.linkedin.com/in/sneha-gond/" target="_blank">https://www.linkedin.com/in/sneha-gond/</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-github"></i>
+                            <div class="contact-text">
+                                <h3>GitHub</h3>
+                                <a href="https://github.com/Sneha2006sgr" target="_blank">github.com/Sneha2006sgr</a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <form id="contact-form">
-                    <div class="container">
-                        <h2>Ask me here!!!</h2>
-                        <form id="feedbackForm">
+                    <div class="contact-form">
+                        <form id="contactForm">
                             <div class="form-group">
-                                <label for="name">Name:</label>
-                                <input type="text" id="name" name="name" required>
+                                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                                <label for="name">Your Name</label>
                             </div>
                             <div class="form-group">
-                                <label for="email">Email:</label>
-                                <input type="email" id="email" name="email" required>
+                                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                                <label for="email">Your Email</label>
                             </div>
                             <div class="form-group">
-                                <label for="message">Message:</label>
-                                <textarea id="message" name="message" required></textarea>
+                                <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                                <label for="message">Your Message</label>
                             </div>
-                            <button type="submit" class="btn">Send Message</button>
+                            <button type="submit" class="submit-btn">
+                                <span>Send Message</span>
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
                         </form>
                     </div>
-                </form>
+                </div>
             </div>
         </section>
     </main>
 
+    <!-- Success Popup -->
+    <div class="success-popup">
+        <div class="popup-content">
+            <div class="thank-you-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h2 class="thank-you-title">Thank You!</h2>
+            <p class="thank-you-message">Your message has been sent successfully. I will get back to you as soon as possible.</p>
+            <button class="close-success-popup">Close</button>
+        </div>
+    </div>
+
+    <div class="page-transition"></div>
+
+    <!-- Image Popup -->
+    <div class="image-popup">
+        <div class="popup-content">
+            <img src="" alt="Experience Image" class="popup-image">
+            <button class="close-popup">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+    </div>
+
     <footer>
         <div class="container">
-            <p>&copy; 2024 Sneha Gond. All rights reserved.</p>
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/sneha-gond-069583230" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/Sneha2006sgr" target="_blank"><i class="fab fa-github"></i></a>
-                
-            </div>
+            <p>&copy; 2025 Sneha Gond. All Rights Reserved.</p>
         </div>
     </footer>
 
-    <script src="main.js"></script>
+    <!-- Certificate Popup -->
+    <div class="certificate-popup">
+        <div class="popup-content">
+            <img src="" alt="Certificate" class="popup-image">
+            <button class="close-popup">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
