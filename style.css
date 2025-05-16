@@ -1191,6 +1191,14 @@ body.dark-theme .image-popup .close-popup {
     transition: color 0.3s ease;
 }
 
+.skill-icon .fa-woocommerce {
+    color: #96588a;
+    background: #fff;
+    border-radius: 50%;
+    padding: 6px;
+    font-size: 1.5em;
+}
+
 .skill-item span {
     font-size: 1rem;
     font-weight: 500;

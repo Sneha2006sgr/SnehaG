@@ -69,7 +69,7 @@ sections.forEach(section => {
 
 // Typewriter Effect
 const typedText = document.querySelector('.typed-text');
-    const texts = ['Final Year BCA Student', 'Web Developer', 'Problem Solver', 'Data Analyst'];
+    const texts = [ 'Web Developer'];
     
     if (typedText) {
 let textIndex = 0;
@@ -141,6 +141,30 @@ type();
             }
         });
     }
+    // Form submission handler
+    document.getElementById('contact-form').addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        const formData = new FormData(this);
+        
+        fetch(this.action, {
+            method: 'POST',
+            body: formData
+        })
+        .then(response => {
+            if (response.ok) {
+                // Show thank you popup
+                const popup = document.getElementById('thankYouPopup');
+                popup.classList.add('active');
+                
+                // Reset form
+                this.reset();
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+        });
+    });
     
     if (closeSuccessPopup && successPopup) {
         closeSuccessPopup.addEventListener('click', function() {

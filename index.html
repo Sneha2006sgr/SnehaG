@@ -95,6 +95,10 @@
                                 </div>
                                 <div class="cert-item">
                                     <i class="fas fa-certificate"></i>
+                                    <span>Data Analytics using Excel</span>
+                                </div>
+                                <div class="cert-item">
+                                    <i class="fas fa-certificate"></i>
                                     <span>Arduino Programming</span>
                                 </div>
                                 <div class="cert-item">
@@ -263,6 +267,42 @@
                             </div>
                         </div>
                         <div class="project-number">04</div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-content">
+                            <div class="project-text">
+                            <h3>CODE CRAFT Website</h3>
+                            <div class="project-details">
+                                <ul>
+                                    <li>This website is an official website of CODE CRAFT Organization</li>
+                                    <li>This organization has organized tech workshops</li>
+                                    <li>this website contains complete information about founders, team members and workshop details as well</li>
+                                    <li>It has a special feature for contact form that is all the responses are directly shared on mail of organization</li>
+                                </ul>
+                                <div class="tech-stack">
+                                    <span>HTML</span>
+                                    <span>CSS</span>
+                                    <span>Javascript</span>
+                                    <span>Responsiveness</span>
+                                </div>
+                                    <div class="project-buttons">
+                                        <a href="https://github.com/Code-Craft-Practicals/codecraftofficial.git" class="project-btn source-code">
+                                            <i class="fab fa-github"></i>
+                                            Source Code
+                                        </a>
+                                        <a href="https://code-craft-practicals.github.io/codecraftofficial/" class="project-btn view-project">
+                                            <i class="fas fa-external-link-alt"></i>
+                                            View Project
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-image">
+                                <img src="static/images/project5.jpg" alt="CODE CRAFT">
+                            </div>
+                        </div>
+                        <div class="project-number">05</div>
                     </div>
                 </div>
             </div>
@@ -437,22 +477,13 @@
                                 <div class="skill-icon"><i class="fab fa-js"></i></div>
                                 <span>JavaScript</span>
                             </div>
-                        </div>
-                    </div>
-
-                    <div class="skill-card">
-                        <div class="skill-card-header">
-                            <i class="fas fa-database"></i>
-                        <h3>Databases</h3>
-                        </div>
-                        <div class="skill-card-content">
-                            <div class="skill-item" data-skill="SQL">
-                                <div class="skill-icon"><i class="fas fa-database"></i></div>
-                                <span>SQL</span>
+                            <div class="skill-item" data-skill="WordPress">
+                                <div class="skill-icon"><i class="fab fa-wordpress"></i></div>
+                                <span>WordPress</span>
                             </div>
-                            <div class="skill-item" data-skill="Oracle">
-                                <div class="skill-icon"><i class="fas fa-database"></i></div>
-                                <span>Oracle</span>
+                            <div class="skill-item" data-skill="WooCommerce">
+                            <div class="skill-icon"><i class="fab fa-wordpress"></i></div>
+                            <span>WooCommerce</span>
                             </div>
                         </div>
                     </div>
@@ -484,11 +515,29 @@
                                 <span>Git</span>
                             </div>
                             <div class="skill-item" data-skill="VS Code">
-                                <div class="skill-icon"><i class="fas fa-code"></i></div>
-                                <span>VS Code</span>
+                                <div class="skill-icon"><i class="fas fa-code-branch"></i></div>
+                                <span>Version Control</span>
                             </div>
                         </div>
                     </div>
+
+                    <div class="skill-card">
+                        <div class="skill-card-header">
+                            <i class="fas fa-database"></i>
+                        <h3>Databases</h3>
+                        </div>
+                        <div class="skill-card-content">
+                            <div class="skill-item" data-skill="SQL">
+                                <div class="skill-icon"><i class="fas fa-database"></i></div>
+                                <span>SQL</span>
+                            </div>
+                            <div class="skill-item" data-skill="Oracle">
+                                <div class="skill-icon"><i class="fas fa-database"></i></div>
+                                <span>Oracle</span>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </section>
@@ -709,7 +758,15 @@
                         </div>
                     </div>
                     <div class="contact-form">
-                        <form id="contactForm">
+                        <form id="contactForm" class="contact-form" action="https://formsubmit.co/snehasgr1675@gmail.com" method="POST">
+                            <!-- Honeypot to prevent spam -->
+                            <input type="text" name="_honey" style="display:none">
+                            
+                            <!-- Disable Captcha -->
+                            <input type="hidden" name="_captcha" value="false">
+                            
+                            <!-- Prevent redirect -->
+                            <input type="hidden" name="_next" value="false">
                             <div class="form-group">
                                 <input type="text" id="name" name="name" placeholder="Your Name" required>
                                 <label for="name">Your Name</label>
@@ -746,33 +803,11 @@
     </div>
 
     <div class="page-transition"></div>
-
-    <!-- Image Popup -->
-    <div class="image-popup">
-        <div class="popup-content">
-            <img src="" alt="Experience Image" class="popup-image">
-            <button class="close-popup">
-                <i class="fas fa-times"></i>
-            </button>
-        </div>
-    </div>
-
     <footer>
         <div class="container">
             <p>&copy; 2025 Sneha Gond. All Rights Reserved.</p>
         </div>
     </footer>
-
-    <!-- Certificate Popup -->
-    <div class="certificate-popup">
-        <div class="popup-content">
-            <img src="" alt="Certificate" class="popup-image">
-            <button class="close-popup">
-                <i class="fas fa-times"></i>
-            </button>
-        </div>
-    </div>
-
     <script src="script.js"></script>
 </body>
 </html>
