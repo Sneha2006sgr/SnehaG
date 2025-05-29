@@ -135,37 +135,33 @@ type();
     if (contactForm) {
         contactForm.addEventListener('submit', function(e) {
             e.preventDefault();
-            if (successPopup) {
-                successPopup.classList.add('active');
-                    contactForm.reset();
-            }
+            
+            // Get form data
+            const formData = new FormData(contactForm);
+            
+            // Send form data
+            fetch(contactForm.action, {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => {
+                if (response.ok) {
+                    // Show success popup
+                    if (successPopup) {
+                        successPopup.classList.add('active');
+                        contactForm.reset();
+                    }
+                } else {
+                    throw new Error('Network response was not ok');
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('There was an error sending your message. Please try again.');
+            });
         });
     }
-    // Form submission handler
-    document.getElementById('contact-form').addEventListener('submit', function(e) {
-        e.preventDefault();
-        
-        const formData = new FormData(this);
-        
-        fetch(this.action, {
-            method: 'POST',
-            body: formData
-        })
-        .then(response => {
-            if (response.ok) {
-                // Show thank you popup
-                const popup = document.getElementById('thankYouPopup');
-                popup.classList.add('active');
-                
-                // Reset form
-                this.reset();
-            }
-        })
-        .catch(error => {
-            console.error('Error:', error);
-        });
-    });
-    
+
     if (closeSuccessPopup && successPopup) {
         closeSuccessPopup.addEventListener('click', function() {
             successPopup.classList.remove('active');
