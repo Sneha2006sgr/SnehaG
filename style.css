@@ -94,6 +94,23 @@ body.dark-theme {
     padding: 0 20px;
 }
 
+main {
+    margin: 0;
+    transition: margin 0.3s ease;
+}
+
+@media (max-width: 1100px) {
+    main {
+        margin: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    main {
+        margin: 0;
+    }
+}
+
 /* Theme Toggle */
 .theme-toggle {
     position: fixed;
@@ -138,16 +155,28 @@ body.dark-theme #theme-button:hover {
 /* Navigation */
 header {
     position: fixed;
-    top: 0;
-    right: 0;
-    height: 100vh;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    width: auto;
+    height: auto;
+    padding: 10px 12px;
     display: flex;
     align-items: center;
-    z-index: 100;
+    z-index: 1000;
+    background: transparent;
+    border: none;
+}
+
+body.dark-theme header {
+    background: transparent;
+    border: none;
 }
 
 nav {
-    margin-right: 20px;
+    width: auto;
+    padding: 0;
+    margin: 0;
 }
 
 nav ul {
@@ -241,6 +270,48 @@ body.dark-theme .section-title::after {
 /* Home Section */
 #home {
     position: relative;
+}
+
+.home-subtitle {
+    font-size: 1.3rem;
+    margin: 12px 0 20px;
+    color: var(--primary);
+    font-weight: 600;
+}
+
+.cta-button,
+.resume-btn {
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 15px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: #fff;
+    background-color: var(--button-bg);
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.resume-btn {
+    background-color: var(--secondary);
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.cta-button:hover,
+.resume-btn:hover {
+    transform: translateY(-2px);
+    background-color: var(--button-hover);
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
 }
 
 .home-content {
@@ -865,9 +936,13 @@ body.dark-theme .project-btn.view-project:hover {
 /* Experience Section Styles */
 .experience-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(3, minmax(280px, 1fr));
+    gap: 1.5rem;
     padding: 2rem 0;
+    align-items: stretch;
+    justify-items: stretch;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .experience-item {
@@ -877,8 +952,17 @@ body.dark-theme .project-btn.view-project:hover {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 
+.experience-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+}
 .experience-item:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
@@ -1900,11 +1984,11 @@ body.dark-theme footer {
     }
 
     .projects-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .experience-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, minmax(280px, 1fr));
     }
 }
 
@@ -1927,6 +2011,14 @@ body.dark-theme footer {
         background-color: var(--card);
         padding: 10px 0;
         box-shadow: 0 -5px 15px var(--shadow);
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .experience-grid {
+        grid-template-columns: 1fr;
     }
 
     nav ul li a {
@@ -1993,6 +2085,22 @@ body.dark-theme footer {
         justify-content: center;
     }
 
+    .experience-item {
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .company-image {
+        height: auto;
+        min-height: 180px;
+    }
+
+    .company-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
     .skills-container {
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         gap: 20px;
@@ -2024,6 +2132,16 @@ body.dark-theme footer {
 
     .skill-icon {
         font-size: 1.8rem;
+    }
+
+    .achievements-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .achievement-card {
+        min-width: auto;
+        margin: 0;
     }
 }
 

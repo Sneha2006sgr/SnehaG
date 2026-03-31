@@ -69,7 +69,7 @@ sections.forEach(section => {
 
 // Typewriter Effect
 const typedText = document.querySelector('.typed-text');
-    const texts = [ 'Web Developer'];
+    const texts = [ 'Web Developer','AI Enthusiast','Problem Solver','API Tester'];
     
     if (typedText) {
 let textIndex = 0;
