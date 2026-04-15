@@ -37,6 +37,22 @@ themeButton.addEventListener('click', () => {
 // Section Visibility
 const sections = document.querySelectorAll('section');
 const navLinks = document.querySelectorAll('nav ul li a');
+const menuToggle = document.querySelector('.menu-toggle');
+const header = document.querySelector('header');
+
+if (menuToggle && header) {
+    menuToggle.addEventListener('click', () => {
+        header.classList.toggle('open');
+    });
+}
+
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        if (header && header.classList.contains('open')) {
+            header.classList.remove('open');
+        }
+    });
+});
 
     if (sections.length > 0 && navLinks.length > 0) {
 const observerOptions = {
